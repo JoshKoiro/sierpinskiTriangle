@@ -106,9 +106,9 @@ let pointGen = (currentPoint) => {
 }
 
 //function to run afterwords
-let step = () => {
+let step = (blockSize) => {
     newPoint = pointGen(currentPoint)
-    drawPoint(newPoint)
+    drawPoint(newPoint,blockSize)
     currentPoint = newPoint
     currentPoint = newPoint
 }
